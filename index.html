@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <!-- ============================================================
+       META & SEO
+  ============================================================ -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Academic portfolio of Afrina Akter Mim — CSE Graduate & seeking a Masters or PhD." />
+  <meta name="keywords" content="CSE Grad, Data enthusiast, Coffee-fueled Python coder, Always learning 📖" />
+  <meta name="author" content="Afrina Akter Mim" />
+  <meta property="og:title" content="Afrina Akter Mim's Portfolio" />
+  <meta property="og:description" content="Always Learning and Exploring the World of Computer Science and Data" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <title>Afrina Akter Mim's Portfolio</title>
+
+  <!-- ============================================================
+       FONTS
+  ============================================================ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@300;400;500&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- ============================================================
+       ICONS
+  ============================================================ -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- ============================================================
+       STYLESHEET
+  ============================================================ -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       LOADING SCREEN
+  ============================================================ -->
+  <div id="loader" aria-hidden="true">
+    <div class="loader-inner">
+      <div class="loader-logo">A</div>
+      <div class="loader-bar"><span></span></div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       SCROLL PROGRESS INDICATOR
+  ============================================================ -->
+  <div id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- ============================================================
+       NAVIGATION
+  ============================================================ -->
+  <header id="navbar" role="banner">
+    <nav class="nav-container" aria-label="Primary navigation">
+      <!-- Logo -->
+      <a href="#home" class="nav-logo" aria-label="Afrina Akter Mim — Home">
+        <span class="logo-mark">A</span>
+        <span class="logo-name">Afrina Akter Mim</span>
+      </a>
+
+      <!-- Desktop Links -->
+      <ul class="nav-links" role="list">
+        <li><a href="#home" class="nav-link active" aria-current="page">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#publications" class="nav-link">Publications</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <!-- Theme Toggle -->
+        <button id="theme-toggle" class="theme-btn" aria-label="Toggle dark/light mode" title="Toggle theme">
+          <i class="fas fa-sun" id="theme-icon" aria-hidden="true"></i>
+        </button>
+
+        <!-- Hamburger Menu -->
+        <button id="menu-toggle" class="hamburger" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu" role="navigation" aria-label="Mobile navigation" aria-hidden="true">
+      <ul role="list">
+        <li><a href="#home" class="mobile-link">Home</a></li>
+        <li><a href="#about" class="mobile-link">About</a></li>
+        <li><a href="#skills" class="mobile-link">Skills</a></li>
+        <li><a href="#projects" class="mobile-link">Projects</a></li>
+        <li><a href="#publications" class="mobile-link">Publications</a></li>
+        <li><a href="#education" class="mobile-link">Education</a></li>
+        <li><a href="#contact" class="mobile-link">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================
+         HERO SECTION
+    ========================================================== -->
+    <section id="home" class="hero" aria-label="Hero introduction">
+      <!-- Decorative grid -->
+      <div class="hero-grid" aria-hidden="true"></div>
+
+      <div class="hero-content">
+        <!-- Eyebrow label -->
+        <p class="hero-eyebrow reveal-text">
+          <span class="eyebrow-line" aria-hidden="true"></span>
+          Open to academic and research opportunities
+        </p>
+
+        <!-- Main heading -->
+        <h1 class="hero-title">
+          <span class="title-line" data-delay="0">CSE Graduate</span>  
+          <span class="title-line title-accent" data-delay="100">Learning &</span>
+          <span class="title-line" data-delay="200">Exploring</span>
+        </h1>
+
+        <!-- Animated subtitle -->
+        <p class="hero-subtitle">
+          I'm <span class="typed-name">Afrina Akter Mim</span> —
+          <span id="typed-text" aria-live="polite"></span><span class="cursor" aria-hidden="true">|</span>
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary" aria-label="View my work">
+            View My Projects
+            <i class="fas fa-arrow-right" aria-hidden="true"></i>
+          </a>
+          <a href="#contact" class="btn btn-ghost" aria-label="Get in touch">
+            Contact Me
+             <i class="fas fa-envelope" aria-hidden="true"></i>
+          </a>
+        </div>
+
+        <!-- Stats row -->
+        <div class="hero-stats" role="list" aria-label="Career statistics">
+          
+        </div>
+      </div>
+
+      <!-- Hero visual -->
+      <div class="hero-visual" aria-hidden="true">
+        <div class="hero-image-frame">
+          <img
+            src="Afrina_L.jpg?w=600&h=700&fit=crop&crop=face"
+            alt="Alex Morgan — Professional Portrait"
+            class="hero-photo"
+            loading="eager"
+          />
+          <div class="frame-deco frame-deco-1"></div>
+          <div class="frame-deco frame-deco-2"></div>
+          
+        </div>
+      </div>
+
+      <!-- Scroll cue -->
+      <a href="#about" class="scroll-cue" aria-label="Scroll to About section">
+        <span>Scroll</span>
+        <i class="fas fa-chevron-down" aria-hidden="true"></i>
+      </a>
+    </section>
+
+    <!-- ==========================================================
+         ABOUT SECTION
+    ========================================================== -->
+    <section id="about" class="section about" aria-labelledby="about-heading">
+      <div class="container">
+
+        <!-- Section header -->
+        <div class="section-header animate-on-scroll">
+          <span class="section-tag">01 / About</span>
+          <h2 id="about-heading" class="section-title">Academic Journey <em>in</em> Computer Science </h2>
+        </div>
+
+        <div class="about-grid">
+          <!-- Photo column -->
+          <div class="about-photo-col animate-on-scroll">
+            <div class="about-photo-wrap">
+              <img
+                src="Afrina_L.jpg?w=500&h=600&fit=crop&crop=face&transform: scaleX(-1)"
+                alt="Afrina Akter Mim — Academic Portrait"
+                class="about-photo"
+                loading="lazy"
+              />
+              <div class="about-photo-deco" aria-hidden="true"></div>
+            </div>
+          </div>
+
+          <!-- Text column -->
+          <div class="about-text-col animate-on-scroll">
+            <p class="about-lead">
+              A Computer Science graduate with a strong interest in expand my knowledge, upgrade my technical skills and prepare myself for a fast growth career in the global IT industry.
+            </p>
+            <p class="about-body">
+              I possess strong knowledge in core areas such as data structures, algorithms, artificial intelligence, machine learning, and data mining during my undergraduate studies. These subjects had enhanced my analytical thinking and developed my ability to approach complex problems efficiently.
+            </p>
+            <p class="about-body">
+              Throughout my studies, I have developed analytical and problem-solving skills through various academic projects and coursework. I am motivated to pursue advanced studies to deepen my knowledge, engage in research, and contribute to innovative solutions that address real-world challenges.
+            </p>
+
+            <!-- Key facts -->
+            <ul class="about-facts" aria-label="Key facts">
+              <li><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Dhaka, Bangladesh</li>
+              <li><i class="fas fa-briefcase" aria-hidden="true"></i> Open to Master's programs</li>
+              <li><i class="fas fa-graduation-cap" aria-hidden="true"></i> B.Sc. Engg. Computer Science and Engineering, BUBT</li>
+              <li><i class="fas fa-language" aria-hidden="true"></i> Bengali, English, German</li>
+            </ul>
+
+            <!-- CTA -->
+            <div class="about-cta">
+              <a href="CV_Afrina_Akter_Mim.pdf" class="btn btn-primary" download aria-label="Download resume PDF">
+                <i class="fas fa-download" aria-hidden="true"></i> Download Résumé
+              </a>
+              <a href="#contact" class="btn btn-ghost">
+                Get in Touch
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         SKILLS SECTION
+    ========================================================== -->
+    <section id="skills" class="section skills" aria-labelledby="skills-heading">
+      <div class="container">
+
+        <div class="section-header animate-on-scroll">
+          <span class="section-tag">02 / Skills</span>
+          <h2 id="skills-heading" class="section-title">Prior Knowledge & Skills</em></h2>
+        </div>
+
+        <div class="skills-grid">
+
+          <!-- Category: AI, ML -->
+          <div class="skill-category animate-on-scroll">
+            <h3 class="skill-cat-title">
+              <i class="fas fa-brain" aria-hidden="true"></i> Artificial Intelligence & Machine Learning
+            </h3>
+            <ul class="skill-bullet-list" role="list">
+              <li class="skill-bullet-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Supervised and unsupervised machine learning models</span>
+              </li>
+              <li class="skill-bullet-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Convolutional neural network models for image analysis</span>
+              </li>
+              <li class="skill-bullet-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Data Analysis & Data-driven decision making</span>
+              </li>
+                  <li class="skill-bullet-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Natural Language Processing and text classification</span>
+                  </li>
+                  <li class="skill-bullet-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Model training, validation, and performance optimization</span>
+                  </li>
+            </ul>
+          </div>
+          <!-- Category: Software Development -->
+          <div class="skill-category animate-on-scroll">
+            <h3 class="skill-cat-title">
+              <i class="fas fa-code-branch" aria-hidden="true"></i> Software Development & Engineering
+            </h3>
+            <ul class="skill-bullet-list" role="list">
+              <li class="skill-bullet-item">
+                <i class="fas fa-chevron-right"></i>
+                <span>Structured programming and OOP principles</span>
+              </li>
+              <li class="skill-bullet-item">
+                <i class="fas fa-chevron-right"></i>
+                <span>Website, Desktop Software, Mobile Application development Basics</span>
+              </li>
+              <li class="skill-bullet-item">
+                <i class="fas fa-chevron-right"></i>
+                <span>Debugging, testing, and code optimization</span>
+              </li>
+              <li class="skill-bullet-item">
+                <i class="fas fa-chevron-right"></i>
+                <span>Git and GitHub for code management and collaborative development</span>
+              </li>
+              <li class="skill-bullet-item">
+                <i class="fas fa-chevron-right"></i>
+                <span>Linux and Windows environments for development</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Category: Documentation -->
+          <div class="skill-category animate-on-scroll">
+              <h3 class="skill-cat-title">
+                <i class="fas fa-file-alt" aria-hidden="true"></i> Documentation & Academic Writing
+              </h3>
+              <ul class="skill-bullet-list" role="list">
+                <li class="skill-bullet-item">
+                  <i class="fas fa-edit"></i>
+                  <span>LaTeX for academic papers, research posters, and technical reports</span>
+                </li>
+                <li class="skill-bullet-item">
+                  <i class="fas fa-edit"></i>
+                  <span>Canva for visualizing complex AI architectures</span>
+                </li>
+                <li class="skill-bullet-item">
+                  <i class="fas fa-edit"></i>
+                  <span>Proficient in summarizing data insights and algorithmic logic for diverse audiences.</span>
+                </li>
+                <li class="skill-bullet-item">
+                  <i class="fas fa-edit"></i>
+                  <span>Familiarity with professional formatting and citation standards for international conferences.</span>
+                </li>
+              </ul>
+            </div>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+        
+        <!-- Certificates -->
+        <div class="certificates animate-on-scroll" aria-label="Certificates" style="display: flex; flex-wrap: wrap; gap: 20px; align-items: center;">
+  
+        <a href="certificates/Data Analytics Bootcamp.pdf" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
+          <i class="fas fa-award"></i>
+          <span>Data Analytics Bootcamp</span>
+        </a>
+
+        <a href="certificates/kaggle python.pdf" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
+          <i class="fas fa-award"></i>
+          <span>Kaggle Python</span>
+        </a>
+
+        <a href="certificates/Excel & BI Kickstart Batch 1-C34921.pdf" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
+          <i class="fas fa-award"></i>
+          <span>Excel & BI Kickstart Bootcamp</span> 
+        </a>
+
+      </div>
+
+        <!-- Tech Tags -->
+        <div class="tech-tags animate-on-scroll" aria-label="Additional technologies">
+        <span class="tag">Python</span><span class="tag">C</span>
+        <span class="tag">C++</span><span class="tag">C#</span>
+        <span class="tag">Java</span><span class="tag">PHP</span>
+        <span class="tag">JavaScript</span><span class="tag">HTML5</span>
+
+        <span class="tag">Pandas</span><span class="tag">NumPy</span>
+        <span class="tag">Matplotlib</span><span class="tag">Seaborn</span>
+        <span class="tag">SciPy</span><span class="tag">Scikit-Learn</span>
+        <span class="tag">TensorFlow</span><span class="tag">Keras</span>
+        <span class="tag">PyTorch</span><span class="tag">Plotly</span>
+
+        <span class="tag">Power BI</span><span class="tag">Excel</span>
+        <span class="tag">Tableau</span><span class="tag">Jupyter</span>
+        <span class="tag">Google Colab</span><span class="tag">Anaconda</span>
+
+        <span class="tag">MySQL</span><span class="tag">SQL Server</span>
+        <span class="tag">Postgres</span>
+
+        <span class="tag">.NET</span><span class="tag">Bootstrap</span>
+        <span class="tag">Docker</span><span class="tag">Apache</span>
+        <span class="tag">Android</span>
+
+        <span class="tag">Git</span><span class="tag">GitHub</span>
+        <span class="tag">Linux</span><span class="tag">Google Cloud</span>
+
+        <span class="tag">LaTeX</span>
+      </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         PROJECTS SECTION
+    ========================================================== -->
+    <section id="projects" class="section projects" aria-labelledby="projects-heading">
+      <div class="container">
+
+        <div class="section-header animate-on-scroll">
+          <span class="section-tag">03 /University Projects</span>
+          <h2 id="projects-heading" class="section-title">Selected <em>Work</em></h2>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid" id="projects-grid">
+
+          <!-- Project 1 -->
+          <article class="project-card animate-on-scroll" aria-label="Animated Story">
+            <div class="project-img-wrap">
+              <img src="projects/as.png" loading="lazy" />
+              <div class="project-overlay" aria-hidden="true">
+                <a href="https://github.com/Afrinaa/AS" class="overlay-link" aria-label="View Animated Story source code on GitHub" target="_blank" rel="noopener noreferrer">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-cat">2D Animation</span>
+              </div>
+              <h3 class="project-title">Animated Story</h3>
+              <p class="project-desc">In this project we made a Animated Story of "Slow and Steady wins the race" which is created by using GLUT library and C++ language.</p>
+              <ul class="project-stack" aria-label="Technologies used">
+                <li>C++</li><li>OpenGL Utility Toolkit</li><li>Codeblocks</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card animate-on-scroll" aria-label="Blood Donation Management System">
+            <div class="project-img-wrap">
+              <img src="projects/bdms.png" alt="Blood Donation Management System" loading="lazy" />
+              <div class="project-overlay" aria-hidden="true">
+                <a href="https://github.com/Afrinaa/BDMS2" class="overlay-link" aria-label="View Blood Donation Management System on GitHub" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-cat">Website</span>
+              </div>
+              <h3 class="project-title">Blood Donation Management System</h3>
+              <p class="project-desc">Blood Donation Management System is an web application which helps its users to look for the blood donor information and to provide direct link between the donor and recipient.</p>
+              <ul class="project-stack" aria-label="Technologies used">
+                <li>PHP</li><li>HTML</li><li>CSS</li><li>JavaScript</li><li>MySQL</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card animate-on-scroll" aria-label="Gamer's Zone">
+            <div class="project-img-wrap">
+              <img src="projects/bgz.png" alt="Gamer's Zone interface" loading="lazy" />
+              <div class="project-overlay" aria-hidden="true">
+                <a href="https://github.com/Afrinaa/BGZ" class="overlay-link" aria-label="View Gamer's Zone on GitHub" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-cat">Website</span>
+              </div>
+              <h3 class="project-title">Gamer's Zone</h3>
+              <p class="project-desc">BUBT Gamers Zone provides a platform for gamers to connect with each other, share their experiences and knowledge, and stay up- to-date with the latest news and trends in the gaming world.</p>
+              <ul class="project-stack" aria-label="Technologies used">
+                <li>HTML</li><li>CSS</li><li>JavaScript</li><li>PHP</li><li>Shell</li><li>Ruby</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project-card animate-on-scroll" aria-label="Gym Management System">
+            <div class="project-img-wrap">
+              <img src="projects/gms.png" alt="Gym Management System interface" loading="lazy" />
+              <div class="project-overlay" aria-hidden="true">
+                <a href="https://github.com/Afrinaa/GMS" class="overlay-link" aria-label="View Gym Management System on GitHub" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-cat">Application</span>
+              </div>
+              <h3 class="project-title">Gym Management System</h3>
+              <p class="project-desc">A desktop application for managing gym operations, including trainers, trainees, employees, branches, schedules, and equipment tracking.</p>
+              <ul class="project-stack" aria-label="Technologies used">
+                <li>C#</li><li>MySQL</li><li>.NET</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Project 5 -->
+          <article class="project-card animate-on-scroll" aria-label="Rocking Cradle">
+            <div class="project-img-wrap">
+              <img src="projects/rc.png" alt="Rocking Cradle interface" loading="lazy" />
+              <div class="project-overlay" aria-hidden="true">
+                <a href="https://github.com/Afrinaa/RC" class="overlay-link" aria-label="View Rocking Cradle on GitHub" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-cat">IoT</span>
+              </div>
+              <h3 class="project-title">Rocking Cradle</h3>
+              <p class="project-desc">A dynamic rocking cradle to produce gentle back-and-forth motion with wet detector for infant care.</p>
+              <ul class="project-stack" aria-label="Technologies used">
+                <li>C++</li><li>Arduino</li><li>Blynk</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Project 6 -->
+          <article class="project-card animate-on-scroll" aria-label="Jarvis Voice Assistant">
+            <div class="project-img-wrap">
+              <img src="projects/jarvis.jpg" alt="Jarvis Voice Assistant interface" loading="lazy" />
+              <div class="project-overlay" aria-hidden="true">
+                <a href="https://github.com/Afrinaa/Jarvis" class="overlay-link" aria-label="View Jarvis Voice Assistant on GitHub" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-cat">Desktop Assistant</span>
+              </div>
+              <h3 class="project-title">Jarvis Voice Assistant</h3>
+              <p class="project-desc">A voice-activated assistant for managing daily tasks and providing information on desktop or laptop via voice or text command.</p>
+              <ul class="project-stack" aria-label="Technologies used">
+                <li>Python</li>
+              </ul>
+            </div>
+          </article>
+
+        </div><!-- /projects-grid -->
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         PUBLICATIONS SECTION
+    ========================================================== -->
+    <section id="publications" class="section publications" aria-labelledby="pub-heading">
+      <div class="container">
+
+        <div class="section-header animate-on-scroll">
+          <span class="section-tag">04 / Publications</span>
+          <h2 id="pub-heading" class="section-title">Writing &amp; <em>Research</em></h2>
+        </div>
+
+        <div class="pub-list">
+
+          <article class="pub-item animate-on-scroll">
+          <div class="pub-meta">
+            <span class="pub-venue">Bachalor's Thesis</span>
+            <span class="pub-year">2023</span>
+          </div>
+          <h3 class="pub-title">
+            <a href="https://drive.google.com/file/d/1ayZjAS_73i5sX35VJiSfMukFzTIR0FJR/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+              ALCNN: Advanced Lightweight CNN for Lung Cancer Classification
+              <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i>
+            </a>
+          </h3>
+          <p class="pub-authors">Sagor Saha, Afrina Akter Mim, Sanzida Akter, Md Mehraz Hosen, Arman Habib Shihab</p>
+          <div class="pub-tags">
+            <span class="pub-tag">Deep Learning</span>
+            <span class="pub-tag">Image Processing</span>
+          </div>
+        </article>
+
+          <article class="pub-item animate-on-scroll">
+            <div class="pub-meta">
+              <span class="pub-venue"> IEEE Conference</span>
+              <span class="pub-year">2024</span>
+            </div>
+            <h3 class="pub-title">
+              <a href="https://doi.org/10.1109/ICEEICT62016.2024.10534319 " target="_blank" rel="noopener noreferrer">
+                BengaliHateCB: A Hybrid Deep Learning Model to Identify Bengali Hate Speech Detection from Online Platform 
+                <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i>
+              </a>
+            </h3>
+            <p class="pub-authors"> Sagor Saha, Afrina Akter Mim, Sanzida Akter, Md Mehraz Hosen, Arman Habib Shihab, Md Humaion Kabir Mehedi.</p>
+            <div class="pub-tags">
+              <span class="pub-tag">Deep Learning</span>
+              <span class="pub-tag">Natural Language Processing</span>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         EDUCATION SECTION
+    ========================================================== -->
+    <section id="education" class="section education" aria-labelledby="edu-heading">
+      <div class="container">
+
+        <div class="section-header animate-on-scroll">
+          <span class="section-tag">05 / Education</span>
+          <h2 id="edu-heading" class="section-title">Academic <em>Background</em></h2>
+        </div>
+
+        <div class="timeline">
+
+          <div class="timeline-item animate-on-scroll">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <div class="timeline-meta">
+                <span class="timeline-date">2020 — 2025</span>
+                <span class="timeline-badge">Degree</span>
+              </div>
+              <h3 class="timeline-title">B.Sc. Engineering in Computer Science</h3>
+              <p class="timeline-org">Bangladesh University of Business and Technology (BUBT)</p>
+              <p class="timeline-desc">Graduated with a CGPA of 3.94 out of 4.00.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item animate-on-scroll">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <div class="timeline-meta">
+                <span class="timeline-date">2019</span>
+                <span class="timeline-badge">Degree</span>
+              </div>
+              <h3 class="timeline-title">Higher Secondary Certificate (HSC) </h3>
+              <p class="timeline-org"> Shaheed Bir Uttam Lt. Anwar Girls' College (SAGC)</p>
+              <p class="timeline-desc">From Science group with a GPA of 4.75 out of 5.00.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item animate-on-scroll">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <div class="timeline-meta">
+                <span class="timeline-date">2017</span>
+                <span class="timeline-badge">Degree</span>
+              </div>
+              <h3 class="timeline-title">Secondary School Certificate (SSC)</h3>
+              <p class="timeline-org">Mirpur Bangla School and College (MBSC)</p>
+              <p class="timeline-desc">From Science group with a GPA of 5.00 out of 5.00.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         CONTACT SECTION
+    ========================================================== -->
+    <section id="contact" class="section contact" aria-labelledby="contact-heading">
+      <div class="container">
+
+        <div class="section-header animate-on-scroll">
+          <span class="section-tag">06 / Contact</span>
+          <h2 id="contact-heading" class="section-title">Contact <em>Information</em></h2>
+        </div>
+
+        <div class="contact-grid">
+
+          <!-- Contact info -->
+          <div class="contact-info animate-on-scroll">
+
+            <ul class="contact-details" aria-label="Contact information">
+              <li>
+                <div class="contact-icon" aria-hidden="true"><i class="fas fa-envelope"></i></div>
+                <div>
+                  <span class="detail-label">Email</span>
+                  <a href="mailto:hello@alexmorgan.dev" class="detail-value">afrina141mim@gmail.com</a>
+                </div>
+              </li>
+              <li>
+                <div class="contact-icon" aria-hidden="true"><i class="fas fa-map-marker-alt"></i></div>
+                <div>
+                  <span class="detail-label">Location</span>
+                  <span class="detail-value">Dhaka, Bangladesh</span>
+                </div>
+              </li>
+            </ul>
+
+            <!-- Social links -->
+            <div class="contact-social" aria-label="Social media links">
+              <a href="https://github.com/Afrinaa" class="social-link" aria-label="GitHub profile" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github" aria-hidden="true"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/afrina141mim/" class="social-link" aria-label="LinkedIn profile" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Contact form -->
+          <div class="contact-form-wrap animate-on-scroll">
+            <form id="contact-form" class="contact-form" novalidate aria-label="Contact form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Full Name <span aria-hidden="true">*</span></label>
+                  <input type="text" id="name" name="name" placeholder="Jane Doe" required
+                         autocomplete="name" aria-required="true" aria-describedby="name-error" />
+                  <span class="field-error" id="name-error" role="alert" aria-live="polite"></span>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email Address <span aria-hidden="true">*</span></label>
+                  <input type="email" id="email" name="email" placeholder="jane@example.com" required
+                         autocomplete="email" aria-required="true" aria-describedby="email-error" />
+                  <span class="field-error" id="email-error" role="alert" aria-live="polite"></span>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="Inquiries..."
+                       autocomplete="off" />
+              </div>
+              <div class="form-group">
+                <label for="message">Message <span aria-hidden="true">*</span></label>
+                <textarea id="message" name="message" rows="5" placeholder="Questions or Correspondence..." required
+                          aria-required="true" aria-describedby="message-error"></textarea>
+                <span class="field-error" id="message-error" role="alert" aria-live="polite"></span>
+              </div>
+              <button type="submit" class="btn btn-primary btn-full" id="submit-btn">
+                <span class="btn-text">Send Message</span>
+                <i class="fas fa-paper-plane btn-icon" aria-hidden="true"></i>
+              </button>
+              <div id="form-success" class="form-success" role="alert" aria-live="assertive" hidden>
+                <i class="fas fa-circle-check" aria-hidden="true"></i>
+                Thanks! I'll contact back within 24 hours.
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main><!-- /main -->
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Afrina Akter Mim. All rights reserved.</p>
+        <p>Designed &amp; built with <i class="fas fa-heart" aria-label="love" style="color:var(--accent)"></i> in Dhaka, Bangladesh</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top button -->
+  <button id="back-to-top" class="back-to-top" aria-label="Scroll back to top" title="Back to top" hidden>
+    <i class="fas fa-chevron-up" aria-hidden="true"></i>
+  </button>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
